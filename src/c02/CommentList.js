@@ -4,12 +4,20 @@ import CommentItem from "./CommentItem";
 
 export default class CommentList extends PureComponent {
   static propTypes = {
-    comments: PropTypes.object.isRequired
+    comments: PropTypes.array.isRequired
   };
+
   render() {
     return (
       <div className="comment-list">
-        {this.props.comments.map(comment => <CommentItem comment={comment} />)}
+        {
+          this.props.comments.map((comment, index) => 
+            <CommentItem
+              key={index}
+              comment={comment}
+            />
+          )
+        }
       </div>
     );
   }

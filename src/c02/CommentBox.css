@@ -20,10 +20,8 @@
   top: 0px;
   width: 60px;
   height: 60px;
-  background-color: #eee;
-}
-
-.comment-form {
+  background-color: greenyellow;
+  border-radius: 50%;
 }
 
 .comment-form textarea {
