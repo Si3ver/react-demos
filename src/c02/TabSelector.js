@@ -1,3 +1,8 @@
+/**
+ * 受控组件
+ * 状态来自外部，需要传入 value 和 onChange
+ */
+
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import "./TabSelector.css";
@@ -14,8 +19,10 @@ export default class TabSelector extends PureComponent {
     options: [],
     onChange: () => {}
   };
+
   render() {
     const { options, value, onChange } = this.props;
+
     return (
       <div className="tab-selector">
         <ul>
@@ -23,11 +30,18 @@ export default class TabSelector extends PureComponent {
             <li
               key={opt.value}
               className={`tab-item ${
-                opt.value === this.props.value
+                opt.value === value
                   ? "selected"
                   : ""
               }`}
-              onClick={() => this.props.onChange(opt.value)}
+              style={
+                opt.value === value ? {
+                  backgroundColor: opt.value
+                } : {}
+              }
+              onClick={() => 
+                onChange(opt.value)
+              }
             >
               {opt.name}
             </li>
@@ -38,6 +52,7 @@ export default class TabSelector extends PureComponent {
   }
 }
 
+// mock data
 const options = [
   { name: "Red", value: "red" },
   { name: "Blue", value: "blue" },
@@ -48,6 +63,7 @@ export class TabSelectorSample extends PureComponent {
   state = {
     color: null
   };
+
   render() {
     return (
       <div>

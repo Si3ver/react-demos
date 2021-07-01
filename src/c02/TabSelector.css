@@ -1,6 +1,7 @@
 .tab-selector {
   display: inline-block;
 }
+
 .tab-selector ul,
 .tab-selector li {
   display: inline;
@@ -18,7 +19,7 @@
 }
 
 .tab-selector li.selected {
-  background-color: #777;
+  /* background-color: #777; */
   color: #fff;
   border-color: #777;
 }
