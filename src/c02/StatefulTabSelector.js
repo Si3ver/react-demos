@@ -1,3 +1,8 @@
+/**
+ * 非受控组件
+ * 状态由子组件内部自己维护
+ */
+
 import React, { Component, PureComponent } from "react";
 import PropTypes from "prop-types";
 
@@ -7,7 +12,6 @@ export default class StatefulTabSelect
 
   static propTypes = {
     initialValue: PropTypes.string,
-    value: PropTypes.string,
     options: PropTypes.array,
     onChange: PropTypes.func
   };
@@ -15,24 +19,22 @@ export default class StatefulTabSelect
   state = { value: null };
 
   static defaultProps = {
-    value: null,
+    initialValue: null,
     options: [],
     onChange: () => {}
   };
 
-  // static getDerivedStateFromProps(nextProps, prevState) {
-  //   console.log("get derived", nextProps, prevState);
+  static getDerivedStateFromProps(nextProps, prevState) {
+    console.log("默认值", nextProps, prevState);
 
-  //   return {
-  //     ...prevState,
-  //     value: nextProps.value || nextProps.initialValue
-  //   };
-  // }
+    return {
+      value: prevState.value || nextProps.initialValue,
+    };
+  }
 
   handleSelect = (selected) => {
-    console.log(selected)
     this.setState({ value: selected });
-    this.props.onChange(selected);
+    this.props.onChange(selected);  // 作用：通知父组件～
   };
 
   render() {
@@ -80,6 +82,10 @@ const options = [
 export class StatefulTabSelectSample
   extends PureComponent 
 {
+  handleChange = (value) => {
+    console.log(`当前值: ${value}`)
+  }
+
   render() {
     return (
       <div>
@@ -87,6 +93,7 @@ export class StatefulTabSelectSample
         <StatefulTabSelect
           options={options}
           initialValue="red"
+          onChange={this.handleChange}
         />
       </div>
     );
