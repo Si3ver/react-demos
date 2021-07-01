@@ -1,3 +1,10 @@
+/**
+ * ChatApp功能：
+ * 1. 发送消息
+ * 2. 展示已发送的消息列表
+ * 3. 显示时间（Hoc）
+ */
+
 import React from "react";
 import withTimer from "../c06/withTimer";
 
