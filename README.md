@@ -1,6 +1,14 @@
 # react-demos
 
-# Demo 列表
+## 运行项目
+
+```sh
+$ nvm use
+$ yarn
+$ yarn start
+```
+
+## Demo 列表
 
 - 01 chat-app: 简单的 React 组件和交互演示
 - 02 comment-box：评论框界面的组件拆分和实现
