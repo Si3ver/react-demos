@@ -12,7 +12,7 @@ class MessageList extends React.PureComponent {
   render() {
     return <ul>
       {
-        this.props.messages.map((msg, index) => 
+        this.props.messages.map((msg, index) =>
           <li key={index}>{msg}</li>
         )
       }

@@ -7,8 +7,7 @@ import React, { Component, PureComponent } from "react";
 import PropTypes from "prop-types";
 
 export default class StatefulTabSelect
-  extends Component
-{
+  extends Component {
 
   static propTypes = {
     initialValue: PropTypes.string,
@@ -21,7 +20,7 @@ export default class StatefulTabSelect
   static defaultProps = {
     initialValue: null,
     options: [],
-    onChange: () => {}
+    onChange: () => { }
   };
 
   static getDerivedStateFromProps(nextProps, prevState) {
@@ -48,14 +47,13 @@ export default class StatefulTabSelect
             options.map((opt) => (
               <li
                 key={opt.value}
-                className={`tab-item ${
-                  opt.value === value
+                className={`tab-item ${opt.value === value
                     ? "selected"
                     : ""
-                }`}
+                  }`}
                 style={
                   opt.value === value
-                    ? {backgroundColor: value}
+                    ? { backgroundColor: value }
                     : {}
                 }
                 onClick={() =>
@@ -80,8 +78,7 @@ const options = [
 ];
 
 export class StatefulTabSelectSample
-  extends PureComponent 
-{
+  extends PureComponent {
   handleChange = (value) => {
     console.log(`当前值: ${value}`)
   }

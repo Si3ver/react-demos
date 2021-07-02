@@ -11,7 +11,7 @@ export default class CommentList extends PureComponent {
     return (
       <div className="comment-list">
         {
-          this.props.comments.map((comment, index) => 
+          this.props.comments.map((comment, index) =>
             <CommentItem
               key={index}
               comment={comment}

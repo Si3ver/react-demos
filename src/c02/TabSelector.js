@@ -17,7 +17,7 @@ export default class TabSelector extends PureComponent {
   static defaultProps = {
     value: null,
     options: [],
-    onChange: () => {}
+    onChange: () => { }
   };
 
   render() {
@@ -29,17 +29,16 @@ export default class TabSelector extends PureComponent {
           {options.map(opt => (
             <li
               key={opt.value}
-              className={`tab-item ${
-                opt.value === value
+              className={`tab-item ${opt.value === value
                   ? "selected"
                   : ""
-              }`}
+                }`}
               style={
                 opt.value === value ? {
                   backgroundColor: opt.value
                 } : {}
               }
-              onClick={() => 
+              onClick={() =>
                 onChange(opt.value)
               }
             >
