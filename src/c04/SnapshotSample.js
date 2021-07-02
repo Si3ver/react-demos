@@ -1,8 +1,8 @@
 import React, { PureComponent } from "react";
-import PropTypes from "prop-types";
 import "./SnapshotSample.css";
 
-export default class SnapshotSample extends PureComponent {
+export default class SnapshotSample
+  extends PureComponent {
   state = {
     messages: []
   };
@@ -26,6 +26,7 @@ export default class SnapshotSample extends PureComponent {
       this.handleNewMessage();
     }, 1000);
   }
+
   componentWillUnmount() {
     window.clearInterval(this.interval);
   }
@@ -35,8 +36,8 @@ export default class SnapshotSample extends PureComponent {
   }
 
   componentDidUpdate(
-    prevProps,
-    prevState,
+    _prevProps,
+    _prevState,
     prevScrollHeight
   ) {
     const scrollTop = this.rootNode.scrollTop;
@@ -52,7 +53,9 @@ export default class SnapshotSample extends PureComponent {
         className="snapshot-sample"
         ref={n => (this.rootNode = n)}
       >
-        {this.state.messages.map(msg => <div>{msg}</div>)}
+        {this.state.messages.map((msg, index) =>
+          <div key={index}>{msg}</div>
+        )}
       </div>
     );
   }

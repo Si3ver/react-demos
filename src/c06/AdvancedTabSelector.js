@@ -12,8 +12,8 @@ export default class AdvancedTabSelector extends PureComponent {
   static defaultProps = {
     value: null,
     options: [],
-    onChange: () => {},
-    children: () => {}
+    onChange: () => { },
+    children: () => { }
   };
 
   render() {
@@ -24,9 +24,8 @@ export default class AdvancedTabSelector extends PureComponent {
           {options.map(opt => (
             <li
               key={opt.value}
-              className={`tab-item ${
-                opt.value === this.props.value ? "selected" : ""
-              }`}
+              className={`tab-item ${opt.value === this.props.value ? "selected" : ""
+                }`}
               onClick={() => this.props.onChange(opt.value)}
             >
               {opt.name}
