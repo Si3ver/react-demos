@@ -14,6 +14,7 @@ $ yarn start
 - 02 comment-box: 评论框界面的组件拆分和实现
 - 02 tab-selector: 选择器组件(受控组件)
 - 02 stateful-tab-selector: 选择器组件(非受控组件)
+- 02 name-form: input表单提交(非受控组件)
 - 03 clock: JSX 语法演示
 - 04 clock: 显示当前时间的组件，演示生命周期方法的调用
 - 05 dom-diff: 演示 DOM Diff 的算法原理

@@ -5,6 +5,7 @@ import ChatApp from "./c01/ChatApp";
 import CommentBox from "./c02/CommentBox";
 import { TabSelectorSample } from "./c02/TabSelector";
 import { StatefulTabSelectSample } from "./c02/StatefulTabSelector";
+import { NameForm } from './c02/NameForm';
 import Clock from "./c03/Clock";
 import SnapshotSample from "./c04/SnapshotSample";
 import DomDiff from "./c05/DomDiff";
@@ -46,6 +47,7 @@ const routeMap = {
   "02-comment-box": CommentBox,
   "02-tab-selector": TabSelectorSample,
   "02-stateful-tab-selector": StatefulTabSelectSample,
+  "02-NameForm": NameForm,
   "03-clock": Clock,
   "04-snapshot-sample": SnapshotSample,
   "05-dom-diff": DomDiff,
