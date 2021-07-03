@@ -7,7 +7,7 @@ import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import "./TabSelector.css";
 
-export default class TabSelector extends PureComponent {
+class TabSelector extends PureComponent {
   static propTypes = {
     value: PropTypes.string,
     options: PropTypes.array,
@@ -58,7 +58,7 @@ const options = [
   { name: "Orange", value: "orange" }
 ];
 
-export class TabSelectorSample extends PureComponent {
+class TabSelectorSample extends PureComponent {
   state = {
     color: null
   };
@@ -76,3 +76,5 @@ export class TabSelectorSample extends PureComponent {
     );
   }
 }
+
+export { TabSelectorSample }

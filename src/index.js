@@ -1,11 +1,14 @@
 import React from "react";
 import { render } from "react-dom";
+
 import Hello from "./Hello.jsx";
 import ChatApp from "./c01/ChatApp.jsx";
-import CommentBox from "./c02/CommentBox.jsx";
-import { TabSelectorSample } from "./c02/TabSelector.jsx";
-import { StatefulTabSelectSample } from "./c02/StatefulTabSelector.jsx";
-import { NameForm } from './c02/NameForm.jsx';
+import {
+  CommentBox,
+  TabSelectorSample,
+  StatefulTabSelectSample,
+  NameForm,
+} from "./c02";
 import Clock from "./c03/Clock.jsx";
 import SnapshotSample from "./c04/SnapshotSample.jsx";
 import DomDiff from "./c05/DomDiff.jsx";

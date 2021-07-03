@@ -6,7 +6,7 @@
 import React, { Component, PureComponent } from "react";
 import PropTypes from "prop-types";
 
-export default class StatefulTabSelect
+class StatefulTabSelect
   extends Component {
 
   static propTypes = {
@@ -77,8 +77,9 @@ const options = [
   { name: "Orange", value: "orange" }
 ];
 
-export class StatefulTabSelectSample
+class StatefulTabSelectSample
   extends PureComponent {
+
   handleChange = (value) => {
     console.log(`当前值: ${value}`)
   }
@@ -96,3 +97,5 @@ export class StatefulTabSelectSample
     );
   }
 }
+
+export { StatefulTabSelectSample }
