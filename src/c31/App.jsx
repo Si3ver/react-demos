@@ -5,8 +5,8 @@ import { Provider, connect } from "react-redux";
 import thunk from "redux-thunk";
 import { HashRouter as Router, Route, Link } from "react-router-dom";
 import { Pagination, Table, Input } from "antd";
-import ListPage from "./ListPage";
-import DetailPage from "./DetailPage";
+import ListPage from "./ListPage.jsx";
+import DetailPage from "./DetailPage.jsx";
 import reducer from "./reducer";
 
 require("./App.css");

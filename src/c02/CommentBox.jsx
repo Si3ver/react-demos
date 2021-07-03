@@ -8,8 +8,8 @@
  */
 
 import React from "react";
-import CommentList from "./CommentList";
-import CommentForm from "./CommentForm";
+import CommentList from "./CommentList.jsx";
+import CommentForm from "./CommentForm.jsx";
 import withTimer from "../c06/withTimer";
 import "./CommentBox.css";
 

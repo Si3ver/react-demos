@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
-import CommentItem from "./CommentItem";
+import CommentItem from "./CommentItem.jsx";
 
 export default class CommentList extends PureComponent {
   static propTypes = {

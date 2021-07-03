@@ -1,38 +1,39 @@
 import React from "react";
 import { render } from "react-dom";
-import Hello from "./Hello";
-import ChatApp from "./c01/ChatApp";
-import CommentBox from "./c02/CommentBox";
-import { TabSelectorSample } from "./c02/TabSelector";
-import { StatefulTabSelectSample } from "./c02/StatefulTabSelector";
-import { NameForm } from './c02/NameForm';
-import Clock from "./c03/Clock";
-import SnapshotSample from "./c04/SnapshotSample";
-import DomDiff from "./c05/DomDiff";
-import { AdvancedTabSelectorSample } from "./c06/AdvancedTabSelector";
-import LocaleSample from "./c07/LocaleSample";
-import PureRedux from "./c11/PureRedux";
-import Counter from "./c12/Counter";
-import AsyncAction from "./c13/AsyncAction";
-import ReduxMiddleware from "./c13/ReduxMiddleware";
-import OrgActions from "./c14/OrgActions";
-import RouterSample from "./c16/RouterSample";
-import RouterParams from "./c17/RouterParams";
-import NestedRoute from "./c17/NestedRoute";
-import FormSubmit from "./c29/FormSubmit";
-import FormSubmitAntd from "./c29/FormSubmitAntd";
-import DynamicForm from "./c30/DynamicForm";
-import ListSample from "./c31/App";
-import WizardSample from "./c35/App";
-import Layout1 from "./c36/Layout1";
-import Layout2 from "./c36/Layout2";
-import LayoutResize from "./c36/LayoutResize";
-import PortalSample from "./c37/PortalSample";
-import AntdDialog from "./c37/AntdDialog";
-import D3Sample from "./c38/D3Sample";
-import DndSample from "./c40/DndSample";
-import ReselectSample from "./c43/ReselectSample";
-import Suspense from "./c44/Suspense";
+import Hello from "./Hello.jsx";
+import ChatApp from "./c01/ChatApp.jsx";
+import CommentBox from "./c02/CommentBox.jsx";
+import { TabSelectorSample } from "./c02/TabSelector.jsx";
+import { StatefulTabSelectSample } from "./c02/StatefulTabSelector.jsx";
+import { NameForm } from './c02/NameForm.jsx';
+import Clock from "./c03/Clock.jsx";
+import SnapshotSample from "./c04/SnapshotSample.jsx";
+import DomDiff from "./c05/DomDiff.jsx";
+import { AdvancedTabSelectorSample } from "./c06/AdvancedTabSelector.jsx";
+import LocaleSample from "./c07/LocaleSample.jsx";
+import PureRedux from "./c11/PureRedux.jsx";
+import Counter from "./c12/Counter.jsx";
+import AsyncAction from "./c13/AsyncAction.jsx";
+import ReduxMiddleware from "./c13/ReduxMiddleware.jsx";
+import OrgActions from "./c14/OrgActions.jsx";
+import RouterSample from "./c16/RouterSample.jsx";
+import RouterParams from "./c17/RouterParams.jsx";
+import NestedRoute from "./c17/NestedRoute.jsx";
+import FormSubmit from "./c29/FormSubmit.jsx";
+import FormSubmitAntd from "./c29/FormSubmitAntd.jsx";
+import DynamicForm from "./c30/DynamicForm.jsx";
+import ListSample from "./c31/App.jsx";
+import MultipleRequest from "./c33/MultipleRequest.jsx";
+import WizardSample from "./c35/App.jsx";
+import Layout1 from "./c36/Layout1.jsx";
+import Layout2 from "./c36/Layout2.jsx";
+import LayoutResize from "./c36/LayoutResize.jsx";
+import PortalSample from "./c37/PortalSample.jsx";
+import AntdDialog from "./c37/AntdDialog.jsx";
+import D3Sample from "./c38/D3Sample.jsx";
+import DndSample from "./c40/DndSample.jsx";
+import ReselectSample from "./c43/ReselectSample.jsx";
+import Suspense from "./c44/Suspense.jsx";
 import "antd/dist/antd.css";
 
 import "./index.css";
@@ -65,6 +66,7 @@ const routeMap = {
   "29-form-submit-antd": FormSubmitAntd,
   "30-dynamic-form": DynamicForm,
   "31-list-page": ListSample,
+  "33-MultipleRequest": MultipleRequest,
   "35-wizard-sample": WizardSample,
   "36-layout1": Layout1,
   "36-layout2": Layout2,

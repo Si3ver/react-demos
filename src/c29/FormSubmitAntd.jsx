@@ -6,7 +6,7 @@ import {
   Input,
   Select
 } from "antd";
-import FormBuilder from "./FormBuilder";
+import FormBuilder from "./FormBuilder.jsx";
 
 const Option = Select.Option;
 

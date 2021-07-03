@@ -2,9 +2,9 @@ import React from "react";
 import _ from "lodash";
 import { HashRouter as Router, Route, Link } from "react-router-dom";
 import { Button, Steps, Form, Modal } from "antd";
-import Step1 from "./Step1";
-import Step2 from "./Step2";
-import Step3 from "./Step3";
+import Step1 from "./Step1.jsx";
+import Step2 from "./Step2.jsx";
+import Step3 from "./Step3.jsx";
 
 class App extends React.Component {
   state = {
